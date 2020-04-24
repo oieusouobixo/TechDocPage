@@ -1,0 +1,92 @@
+:root {
+    background-color: rgba(100, 127, 100, 0.5);
+    font-family: Tahoma;
+  }
+  main {
+    margin-left: 300px;
+    padding: 0 20px;
+  }
+  ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  ul > li > a:hover {
+    color: green;
+  }
+  header {
+    font-size: 32px;
+  }
+  h1 {
+    font-size: 22px;
+  }
+  pre {
+    background-color: lightgrey;
+    display: block;
+    padding: 10px;
+    overflow: auto;
+    wrap: hard;
+  }
+  code {
+    background-color: lightgrey;
+  }
+  #navbar {
+    background-color: rgba(0, 127, 50, 0.2);
+    position: fixed;
+    float: left;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 300px;
+    overflow: auto;
+  }
+  #nav-header {
+    border: 1px solid grey;
+    padding: 5px;
+    font-size: 28px;
+  }
+  #navbar > ol > li {
+    border: 1px solid grey;
+    padding: 10px 5px;
+  }
+  #navbar > ol > li:hover {
+    background-color: rgba(0, 127, 50, 1);
+  }
+  #navbar > ol > li > a {
+    display: block;
+  }
+  @media (max-width: 600px) {
+    main {
+      margin-left: 0;
+    }
+    .dropdown {
+      position: relative;
+      display: block;
+      text-align: center;
+    }
+    .drop-content {
+      display: none;
+      position: absolute;
+      width: 100%;
+      text-align: center;
+    }
+    .dropdown:hover .drop-content {
+      display: block;
+    }
+    #navbar {
+      position: static;
+      width: 100%;
+      text-align: center;
+    }
+    #navbar > ol {
+      background-color: #007F32;
+      position: relative;
+    }
+    #navbar > ol > li > a {
+      color: lightgrey;
+    }
+  }
