@@ -1,26 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Progressive Web Apps</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="style.css" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   </head>
   <body>
-    <nav id="navbar" class="dropdown">
-      <header id="nav-header">PWA Documentation</header>
-      <ol class="drop-content">
-        <li><a href="#What_is_a_Progressive_Web_App" class="nav-link">What is a Progressive Web App</a></li>
-        <li><a href="#What_makes_an_app_a_PWA" class="nav-link">What makes an app a PWA</a></li>
-        <li><a href="#Architecture_of_an_app" class="nav-link">Architecture of an app</a></li>
-        <li><a href="#Service_workers_in_the_js13kPWA_app" class="nav-link">Service workers in the js13kPWA app</a></li>
-        <li><a href="#Updates" class="nav-link">Updates</a></li>
-        <li><a href="#Clearing_the_cache" class="nav-link">Clearing the cache</a></li>
-        <li><a href="#References" class="nav-link">References</a></li>
-    </nav>
-    <main id="main-doc">
-      <section class="main-section" id="What_is_a_Progressive_Web_App">
-        <header>What is a Progressive Web App</header>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <header id="nav-header"><a class="navbar-brand" href="#">PWA Documentation</a></header>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#What_is_a_Progressive_Web_App">What is a Progressive Web App<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#What_makes_an_app_a_PWA">What makes an app a PWA<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#Architecture_of_an_app">Architecture of an app<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#Service_workers_in_the_js13kPWA_app">Service workers in the js13kPWA app<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#Updates">Updates<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#Clearing_the_cache">Clearing the cache<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#References">References<span class="sr-only">(current)</span></a>
+            </li>
+            
+        </div>
+      </nav>
+
+      <main id="main-doc">
+        <section class="main-section" id="What_is_a_Progressive_Web_App">
+          <header>What is a Progressive Web App</header>
         <p>PWAs are web apps developed using a number of specific technologies and standard patterns to allow them to take advantage of both web and native app features.</p>
         <p>For example, web apps are more discoverable — it's a lot easier and faster to visit a website than install an application, and you can also share web apps via a link.</p>
         <p>On the other hand, native apps are better integrated with the operating system and therefore offer a more seamless experience for the users. You can install a native app so that it works offline, and users love tapping their homescreen icons to easily access their favorite apps, rather than navigating to it using a browser.</p>
@@ -153,6 +177,12 @@ self.addEventListener('install', (e) => {
         <header>References</header>
         <p>All the documentation in this page is taken from <a href="https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps">MDN</a>.</p>
       </section>
-    </main>
+      </main>
+    </div>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   </body>
 </html>
