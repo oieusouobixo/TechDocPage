@@ -34,6 +34,12 @@ pre {
 code {
   background-color: lightgrey;
 }
+.navbar {
+  display: block;
+}
+.navbar-brand {
+  padding-left: 10px;
+}
 #navbar {
   background-color: rgba(0, 127, 50, 0.2);
   position: fixed;
